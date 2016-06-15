@@ -1,0 +1,15 @@
+[core]
+	editor = /usr/bin/vim
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[user]
+	email = johnmoonyy@gmail.com
+[push]
+	default = matching
+[format]
+  pretty = format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset
+[alias]
+  copr = "!f() { git fetch -fu origin refs/pull/$1/head:pr-$1; git checkout pr-$1; } ; f"
+  prunepr = "!git for-each-ref refs/heads/pr-* --format='%(refname:short)' | while read ref ; do git branch -D $ref ; done"
+  tree = log --pretty=oneline --abbrev-commit --graph --decorate
