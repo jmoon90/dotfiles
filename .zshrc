@@ -26,24 +26,17 @@ alias be="bundle exec"
 alias grc="git rebase --continue"
 
 
+#chruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 DISABLE_AUTO_UPDATE="true"
 
-plugins=(rails git sublime osx rvm ruby gradle heroku autojump colorize brew)
+plugins=(rails git ruby autojump colorize brew)
 
 source $ZSH/oh-my-zsh.sh
-
-export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
 #autojump plugin
 [[ -s /Users/johnmoon/.autojump/etc/profile.d/autojump.sh ]] && source /Users/johnmoon/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
-
-# User configuration
-export PATH="/Users/johnmoon/.rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
-
-export NVM_DIR="/Users/johnmoon/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
