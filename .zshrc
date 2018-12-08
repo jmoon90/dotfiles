@@ -38,6 +38,10 @@ source $ZSH/oh-my-zsh.sh
 
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
+#autojump plugin
+[[ -s /Users/johnmoon/.autojump/etc/profile.d/autojump.sh ]] && source /Users/johnmoon/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit -u
+
 # User configuration
 export PATH="/Users/johnmoon/.rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
