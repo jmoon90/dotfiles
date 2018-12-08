@@ -10,7 +10,7 @@ export RUBY_HEAP_SLOTS_INCREMENT=250000
 export RUBY_GC_MALLOC_LIMIT=500000000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="lukerandall"
 
 alias mrm="rake db:migrate&&rake db:rollback&&rake db:migrate&&rake"
 alias ms="rake db:migrate:status"
@@ -24,6 +24,10 @@ alias gp="git pull origin master"
 alias boom="git add -A; git commit --amend"
 alias be="bundle exec"
 alias grc="git rebase --continue"
+
+
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 DISABLE_AUTO_UPDATE="true"
