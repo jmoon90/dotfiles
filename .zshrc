@@ -1,7 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-
-export EDITOR=vi
+BUNDLER_EDITOR=vim
 
 #GC tuning
 export RUBY_HEAP_FREE_MIN=1024
