@@ -24,18 +24,14 @@ alias boom="git add -A; git commit --amend"
 alias be="bundle exec"
 alias grc="git rebase --continue"
 
-
-#chruby
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
-
 # Uncomment the following line to disable bi-weekly auto-update checks.
 DISABLE_AUTO_UPDATE="true"
 
 plugins=(rails git ruby autojump colorize brew)
 
 source $ZSH/oh-my-zsh.sh
+#chruby
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
 
-#autojump plugin
-[[ -s /Users/johnmoon/.autojump/etc/profile.d/autojump.sh ]] && source /Users/johnmoon/.autojump/etc/profile.d/autojump.sh
-autoload -U compinit && compinit -u
+ulimit -n 1024
