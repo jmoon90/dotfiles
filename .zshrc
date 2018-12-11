@@ -23,6 +23,7 @@ alias gp="git pull origin master"
 alias boom="git add -A; git commit --amend"
 alias be="bundle exec"
 alias grc="git rebase --continue"
+alias wc='git whatchanged -p --abbrev-commit --pretty=medium'
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 DISABLE_AUTO_UPDATE="true"
