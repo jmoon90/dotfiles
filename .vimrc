@@ -44,14 +44,14 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 :set textwidth=80
 match ErrorMsg '\s\+$'
 
-set relativenumber
+set number relativenumber
 
 function! NumberToggle()
   if(&relativenumber == 1)
     set norelativenumber
     set number
   else
-    set relativenumber
+    set number relativenumber
   endif
 endfunc
 nnoremap <C-n> :call NumberToggle()<CR>
