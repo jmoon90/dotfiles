@@ -23,6 +23,7 @@ alias gp="git pull origin master"
 alias boom="git add -A; git commit --amend"
 alias be="bundle exec"
 alias grc="git rebase --continue"
+alias gca="git commit --amend"
 alias wc='git whatchanged -p --abbrev-commit --pretty=medium'
 alias branchclean='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 
