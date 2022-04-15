@@ -2,8 +2,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'zeis/vim-kolor'
 Plug 'tpope/vim-fugitive'
 Plug 'rking/ag.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'vim-scripts/tComment'
-Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-projectionist'
 Plug 'posva/vim-vue'
 Plug 'w0rp/ale'
@@ -24,6 +24,9 @@ set showcmd        " display incomplete commands
 set laststatus=2   " Always display the status line
 set vb             " No audible bell
 set colorcolumn=100
+
+"set FZF to ctrl-p"
+nmap <C-P> :FZF<CR>
 
 "split panel and move"
 nnoremap <silent> <C-k> :wincmd k<CR>
